@@ -85,12 +85,13 @@ export default function SectionOne() {
           "
         >
           <SectionOneSlideshow
-    images={[
-      "/slideshow/SlideImage1.png",
-      "/slideshow/SlideImage2.png",
-      "/slideshow/SlideImage3.png",
-      "/slideshow/SlideImage4.png",
-    ]}
+  images={[
+  `${process.env.NODE_ENV === "production" ? "/FPSkillsWebWork" : ""}/slideshow/SlideImage1.png`,
+  `${process.env.NODE_ENV === "production" ? "/FPSkillsWebWork" : ""}/slideshow/SlideImage2.png`,
+  `${process.env.NODE_ENV === "production" ? "/FPSkillsWebWork" : ""}/slideshow/SlideImage3.png`,
+  `${process.env.NODE_ENV === "production" ? "/FPSkillsWebWork" : ""}/slideshow/SlideImage4.png`,
+]}
+
     interval={4500}
   />
         </motion.div>

@@ -12,7 +12,8 @@ export default function Home() {
       <HeroSection />
       <SectionOne />
 
-      {/* New Sections */}
+      {/* New Sections Test */}
+      
       <SectionWhyJoin />
       <SectionWhySchools />
       <SectionWhyStudents />
