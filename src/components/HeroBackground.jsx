@@ -3,11 +3,14 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+const prefix = process.env.NODE_ENV === "production" ? "/FPSkillsWebWork" : "";
+
 const images = [
-  "/HeroSectionImages/Hero1.webP",
-  "/HeroSectionImages/Hero2.webP",
-  "/HeroSectionImages/Hero3.webP",
+  `${prefix}/HeroSectionImages/Hero1.webP`,
+  `${prefix}/HeroSectionImages/Hero2.webP`,
+  `${prefix}/HeroSectionImages/Hero3.webP`,
 ];
+
 
 export default function HeroBackground() {
   const [index, setIndex] = useState(0);
